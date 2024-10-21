@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/mainscript.js" defer></script>
+  <style>
+    #contact {
+      background-image: url('images/background2.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Courier (sans-serif);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    }
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top w3-row" style="background: #00060c;">
+        <div class="w3-col s4 wm" style="padding-top: 10px;">
+          <span class="w3-text-white" style="padding-left: 50px;">{}<span class="w3-text-cyan">LJ.html</span></span>
+        </div>
+        <div class="w3-col s4 w3-center nav"> 
+          <a href="index.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Home</a>
+          <a href="project.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Projects</a>
+          <a href="skills.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Skills</a>
+          <a href="contact.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Contact</a>
+       </div>
+       <div style="padding-top: 8px;" class="w3-col s4 w3-center search">
+         <img src="images\search.png" style="height: 30px;">
+         <input type="text" name="search" placeholder="search here" id="search">
+       </div>
+      </div>
+    </header>
+
+    <div id="contact">
+      <br><br>
+      <h1 class="w3-text-white w3-center font1 fontshadow" style="padding-top: 20px; padding-bottom: 30px;"><b>CONTACTS</b></h1>
+      <div class="contact glow">
+        <div class="part1contact inline-block">
+          <p class="font1 w3-text-white fontshadow"><b>YOU CAN MESSAGE ME AT:</b></p>
+          <img src="images/call.png" class="inline2 cimage1"> <p class="font2 w3-text-white inline2">0912-345-6789</p><br>
+          <img src="images/email.png" class="inline2 cimage2"> <p class="font2 w3-text-white inline2">lushvalera051527@gmail.com</p>
+          <p class="font1 w3-text-white fontshadow"><b>OR...</b></p>
+
+          <button onclick="window.open('https://www.facebook.com/lushcielo/', '_blank');" class="zoom-effect button3">
+          <b><span class="font1">FACEBOOK</span></b></button>
+          <button onclick="window.open('https://www.instagram.com/notcieloo_/', '_blank');" class="zoom-effect button3">
+          <b><span class="font1">INSTAGRAM</span></b></button>
+          <button onclick="window.open('https://x.com/jjvlynn', '_blank');" class="zoom-effect button3">
+          <b><span class="font1">X</span></b></button>
+          <button onclick="window.open('https://www.tiktok.com/@lushcielo', '_blank');" class="zoom-effect button3">
+          <b><span class="font1">TIKTOK</span></b></button>
+          <button onclick="window.open('https://t.me/@Notcieloo', '_blank');" class="zoom-effect button3">
+          <b><span class="font1">TELEGRAM</span></b></button>
+        </div>
+        <div class="adjust inline-block">
+          <form class="form">
+            <label class="font1 w3-text-white fontshadow"><b>NAME:</b></label><br>
+            <input type="text" name="name" class="contactInput glow"><br>
+
+            <label class="font1 w3-text-white fontshadow"><b>EMAIL:</b></label><br>
+            <input type="email" name="email" class="contactInput glow"><br>
+
+            <label class="font1 w3-text-white fontshadow"><b>MESSAGE:</b></label><br>
+            <textarea class="glow"></textarea><br>
+
+            <button type="submit" class="zoom-effect button4"><b><span class="font1">SUBMIT</span></b></button>
+          </form>
+      </div>
+      </div>
+
+      <script>
+        document.getElementById("search").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          window.location.href = "contact.html";
+        }
+      });
+      </script>
+
+
+      <br><br><br><br><br><br>
+      <footer style="background: #00060c; line-height: 0.8" class="w3-center w3-text-white w3-small">
+          <p style="padding-top: 50px;">@ Copyright All Rights Reserved</p>
+          <p>Designed by Valera and Gregorio</p>
+          <p style="padding-bottom: 40px;">BSIT 2C</p>
+      </footer>
+    </div>
+  </body>
+</html>

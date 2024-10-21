@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/mainscript.js" defer></script>
+  <style>
+    #project {
+      background-image: url('images/background2.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Courier (sans-serif);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    }
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top w3-row" style="background: #00060c;">
+        <div class="w3-col s4 wm" style="padding-top: 10px;">
+          <span class="w3-text-white" style="padding-left: 50px;">{}<span class="w3-text-cyan">LJ.html</span></span>
+        </div>
+        <div class="w3-col s4 w3-center nav"> 
+          <a href="index.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Home</a>
+          <a href="project.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Projects</a>
+          <a href="skills.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Skills</a>
+          <a href="contact.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Contact</a>
+       </div>
+       <div style="padding-top: 8px;" class="w3-col s4 w3-center search">
+         <img src="images\search.png" style="height: 30px;">
+         <input type="text" name="search" placeholder="search here" id="search">
+       </div>
+      </div>
+    </header>
+
+    <div id="project">
+      <div>
+        <div class="fade-in-up">
+        <h1 class="w3-text-white w3-center font1 fontshadow" style="padding-top: 50px; padding-bottom: 5px;"><b>PROJECTS</b></h1>
+        <div style="display: flex; justify-content: center;">
+          <div class="project glow prj">
+            <img src="images/project1.png" class="projectimages">
+            <p class="w3-text-white font1 w3-center w3-large" style="padding-left: 30px; padding-right: 30px;">This is my latest project, a case study for my subject IT-WS02. It is a personal website about me as an Information Technology student.</p>
+            <div style="display: flex; justify-content: center;">
+              <button onclick="if (confirm('Are you sure you want to leave this page?')) 
+                {window.location.href='index.html'; }" class="zoom-effect button2">
+                <b><span class="font1">VISIT</span></b>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: -70px;">
+          <div class="project glow fade-in-up prj">
+            <img src="images/project2.png" class="projectimages" style="margin-bottom: -10px;">
+            <p class="w3-text-white font1 w3-center w3-large " style="padding-left: 30px; padding-right: 30px;">This is my previous project, a case study for my subject IT-WS01 from last year when I was in my first year. It is also a personal website.</p>
+            <div style="display: flex; justify-content: center;">
+              <button onclick="window.location.href='#notfound';" class="zoom-effect button2">
+                <b><span class="font1">VISIT</span></b>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: -70px;">
+          <div class="project glow fade-in-up prj">
+            <img src="images/project3.png" class="projectimages" style="margin-bottom: -10px;">
+            <p class="w3-text-white font1 w3-center w3-large " style="padding-left: 30px; padding-right: 30px;">This is my C++ system and my most recent project, where I developed an Event Management System in C++ that implements CRUD operations.</p>
+            <div style="display: flex; justify-content: center;">
+              <button onclick="window.location.href='#notfound';" class="zoom-effect button2">
+                <b><span class="font1">VISIT</span></b>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: -70px;">
+          <div class="project glow fade-in-up prj">
+            <img src="images/project4.png" class="projectimages">
+            <p class="w3-text-white font1 w3-center w3-large " style="padding-left: 30px; padding-right: 30px;">This is another C++ system I developed, which was a case study for CC-102. It is an Electric Billing System.</p>
+            <div style="display: flex; justify-content: center;">
+              <button onclick="window.location.href='#notfound';" class="zoom-effect button2">
+                <b><span class="font1">VISIT</span></b>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+    <script>
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('show');
+              } else {
+                  entry.target.classList.remove('show'); 
+              }
+          });
+      });
+
+      document.querySelectorAll('.fade-in-up').forEach(element => {
+        observer.observe(element);
+      });
+
+      document.getElementById("search").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          window.location.href = "project.html";
+        }
+      });
+    </script>
+
+    <footer style="background: #00060c; line-height: 0.8" class="w3-center w3-text-white w3-small">
+        <p style="padding-top: 50px;">@ Copyright All Rights Reserved</p>
+        <p>Designed by Valera and Gregorio</p>
+        <p style="padding-bottom: 40px;">BSIT 2C</p>
+    </footer>
+  </body>
+</html>

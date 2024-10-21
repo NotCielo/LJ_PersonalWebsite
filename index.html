@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LJ Personal Website</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/mainscript.js" defer></script>
+  <style>
+    #home {
+      background-image: url('images/background1.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Courier (sans-serif);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    }
+    #about{
+      background-image: url('images/background2.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Courier (sans-serif);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    }
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top w3-row" style="background: #00060c;">
+        <div class="w3-col s4 wm" style="padding-top: 10px;">
+          <span class="w3-text-white" style="padding-left: 50px;">{}<span class="w3-text-cyan">LJ.html</span></span>
+        </div>
+        <div class="w3-col s4 w3-center nav"> 
+          <a href="index.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan marjin">Home</a>
+          <a href="project.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Projects</a>
+          <a href="skills.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Skills</a>
+          <a href="contact.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Contact</a>
+       </div>
+       <div style="padding-top: 8px;" class="w3-col s4 w3-center search">
+         <img src="images\search.png" style="height: 30px;">
+         <input type="text" name="search" placeholder="search here" id="search">
+       </div>
+      </div>
+    </header>
+
+    <div id="home" class="w3-text-white">
+      <br/><br/><br/><br/>
+      <div class="fade-in-up" style="padding-left: 50px">
+        <p style="font-size: 50px; line-height: 1.2; margin-bottom: 20px;">Hi!<br>
+        <b><span style="font-size: 40px;" id="typing-text" class="typing-effect w3-text-cyan"></span></b><br>
+        <span style="font-size: 40px;"><b>A Information Technology<br> Student</b><br></span>
+        <span style="font-size: 30px;">Welcome to my Personal Website!!!</span></p>
+        <button onclick="window.location.href='#about';" class="zoom-effect button">
+          <b><span class="font1">More About Me</span></b>
+        </button>
+      </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+    <div id="about">
+      <br/><br/>
+      <div class="fade-in-up">
+        <h1 class="w3-text-white w3-center font1 fontshadow"><b>ABOUT ME</b></h1>
+        <div id="aboutme" style="background: #00060c;">
+          <p class="w3-text-white font1 w3-xlarge long">Hi, I'm <b>Lush Cielo Valera</b>, currently a second-year student at Nueva Ecija University of Science and Technology, pursuing a Bachelor of Science in Information Technology. Let me tell you a bit about myself: I'm 19 years old and live in Sumacab Este, Cabanatuan City. I'd also like to share why I chose Information Technology. There's a story behind it, and it's the same answer I always give when asked. When I was in elementary school, I became addicted to playing in computer shops. Because I was always there, the owner noticed me and offered me a chance to assist in the shop, which I enjoyed. From that point on, I fell in love with computers. I've always been curious about them, so I decided to pursue a computer-related field. Now that I'm in my second year of college, I haven't declared a major yet, but when the time comes, I think I'll choose Database Management.</p>
+        </div>
+      </div>
+      <br/>
+      <div class="fade-in-up">
+        <h1 class="w3-text-white w3-center font1 fontshadow" style="margin-bottom: 40px;"><b>MAJOR COURSES</b></h1>
+        <div>
+          <div class="w3-row cc">
+            <div class="courses w3-col s6 zoom-effect " style="width: 170px; height: 180px; background: #00060c;">
+              <div style="background: white; width: 120px; height: 80px; margin-top: 10px; margin-left: 25px;" class="cname">
+                <p style="padding-top: 28px;" class="w3-center font1"><b>IT-WS01</b></p>
+                <p class="w3-text-white w3-center w3-small font1" style="padding-top: 35px"><b>Web System and Technologies 2</b></p>
+              </div>
+            </div>
+            <div class="courses w3-col s6 zoom-effect" style="width: 170px; height: 180px; background: #00060c;">
+              <div style="background: white; width: 120px; height: 80px; margin-top: 10px; margin-left: 25px;" class="cname">
+                <p style="padding-top: 28px;" class="w3-center font1"><b>CC-103</b></p>
+                <p class="w3-text-white w3-center w3-small font1" style="padding-top: 35px"><b>Data Structure and Algorithm</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-row cc" style="margin-top: -70px; margin-bottom: -20px;">
+            <div class="courses w3-col s6 zoom-effect" style="width: 170px; height: 180px; background: #00060c;">
+              <div style="background: white; width: 120px; height: 80px; margin-top: 10px; margin-left: 25px;" class="cname">
+                <p style="padding-top: 28px;" class="w3-center font1"><b>IT-PF01</b></p>
+                <p class="w3-text-white w3-center w3-small font1" style="padding-top: 35px"><b>Object-oriented Programing 1</b></p>
+              </div>
+            </div>
+            <div class="courses last w3-col s6 zoom-effect" style="width: 170px; height: 180px; background: #00060c;">
+              <div style="background: white; width: 120px; height: 80px; margin-top: 10px; margin-left: 25px;" class="cname">
+                <p style="padding-top: 28px;" class="w3-center font1"><b>IT-MS01</b></p>
+                <p class="w3-text-white w3-center w3-small font1" style="padding-top: 35px"><b>Discrete Mathematics</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer style="background: #00060c; line-height: 0.8" class="w3-center w3-text-white w3-small">
+        <p style="padding-top: 50px;">@ Copyright All Rights Reserved</p>
+        <p>Designed by Valera and Gregorio</p>
+        <p style="padding-bottom: 40px;">BSIT 2C</p>
+      </footer>
+  </body>
+</html>

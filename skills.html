@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/mainscript.js" defer></script>
+  <style>
+    #skills {
+      background-image: url('images/background2.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Courier (sans-serif);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+    }
+  </style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top w3-row" style="background: #00060c;">
+        <div class="w3-col s4 wm" style="padding-top: 10px;">
+          <span class="w3-text-white" style="padding-left: 50px;">{}<span class="w3-text-cyan">LJ.html</span></span>
+        </div>
+        <div class="w3-col s4 w3-center nav"> 
+          <a href="index.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Home</a>
+          <a href="project.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Projects</a>
+          <a href="skills.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Skills</a>
+          <a href="contact.html" class="w3-text-white w3-bar-item w3-button w3-hover-none w3-border-new w3-bottombar w3-hover-border-cyan w3-hover-text-cyan">Contact</a>
+       </div>
+       <div style="padding-top: 8px;" class="w3-col s4 w3-center search">
+         <img src="images\search.png" style="height: 30px;">
+         <input type="text" name="search" placeholder="search here" id="search">
+       </div>
+      </div>
+    </header>
+
+    <div id="skills">
+      <div class="fade-in-up">
+        <br><br>
+        <h1 class="w3-text-white w3-center font1 fontshadow" style="padding-top: 20px; padding-bottom: 30px;"><b>SKILLS</b></h1>
+        <div class="tab">
+          <div>
+          <button class="tablink font1" onclick="openPage('Tech', this, 'rgba(0, 255, 255, 0.2)', 'white')" id="defaultOpen">Tech Stack</button>
+          <button class="tablink font1" onclick="openPage('Tools', this, 'rgba(0, 255, 255, 0.2)', 'white')">Tools</button>
+          </div>
+        
+          <div id="Tech" class="tabcontent">
+            <div class="tech inline zoom-effect" style="padding: 0px 10px; margin-right: 20px;">
+              <img src="images/html.png" class="inline" style="width: 40px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 12px; margin-left: 15px;"><b>HTML</b></p>
+            </div>
+            <div class="tech inline zoom-effect" style="padding: 0px 10px; margin-right: 20px;">
+              <img src="images/css.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 12px; margin-left: 25px;"><b>CSS</b></p>
+            </div>
+            <div class="tech inline zoom-effect" style="padding-left: 10px; padding-right: 5px; margin-right: 20px;">
+              <img src="images/javascript.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 15px; margin-left: 5px; font-size: 12px;"><b>JAVASCRIPT</b></p>
+            </div>
+            <div class="tech inline zoom-effect" style="padding: 0px 10px; margin-right: 20px;">
+              <img src="images/c++.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 12px; margin-left: 25px;"><b>C++</b></p>
+            </div>
+            <div class="tech inline zoom-effect" style="padding: 0px 10px; margin-right: 20px;">
+              <img src="images/java.png" class="inline" style="width: 25px; padding-top: 6px;">
+              <p class="font1 inline" style="margin-top: 12px; margin-left: 25px;"><b>JAVA</b></p>
+            </div>
+          </div>
+          <div id="Tools" class="tabcontent">
+            <div class="tools inline zoom-effect" style="padding: 0px 10px; margin-right: 20px;">
+              <img src="images/sublime.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 14px; margin-left: 13px; font-size: 14px;"><b>SUBLIME</b></p>
+            </div>
+            <div class="tools inline zoom-effect" style="padding-left: 10px; padding-right: 5px; margin-right: 20px;">
+              <img src="images/cb.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 15px; margin-left: 3px; font-size: 11px;"><b>CODE::BLOCKS</b></p>
+            </div>
+            <div class="tools inline zoom-effect" style="padding-left: 10px; padding-right: 5px; margin-right: 20px;">
+              <img src="images/vs.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 15px; margin-left: 3px; font-size: 10px;"><b>VISUAL STUDIO</b></p>
+            </div>
+            <div class="tools inline zoom-effect" style="padding-left: 10px; padding-right: 5px; margin-right: 20px;">
+              <img src="images/nb.png" class="inline" style="width: 30px; padding-top: 8px;">
+              <p class="font1 inline" style="margin-top: 17px; margin-left: 5px; font-size: 10px;"><b>NETBEANS IDE</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    
+    <script type="text/javascript">
+      function openPage(pageName, elmnt, bgColor, textColor) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+          tablinks[i].style.color = "";
+        }
+
+        document.getElementById(pageName).style.display = "block";
+
+        elmnt.style.backgroundColor = bgColor;
+        elmnt.style.color = textColor;
+      }
+
+      document.getElementById("defaultOpen").click();
+
+      const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show'); 
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+          observer.observe(element);
+      });
+
+        document.getElementById("search").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          window.location.href = "skills.html";
+        }
+      });
+    </script>
+    <footer style="background: #00060c; line-height: 0.8" class="w3-center w3-text-white w3-small">
+          <p style="padding-top: 50px;">@ Copyright All Rights Reserved</p>
+          <p>Designed by Valera and Gregorio</p>
+          <p style="padding-bottom: 40px;">BSIT 2C</p>
+    </footer>
+  </body>
+</html>
